@@ -199,3 +199,7 @@ Reviewing ExpenseTracker sprint. 2 meetings remain. Finalizing implementation an
 ## Turn 5 — Manager (2026-05-21 16:46 UTC)
 
 Verifying project completion by running acceptance tests. If all 4 criteria pass, I will mark the project complete.
+
+## Turn 1 — Manager (2026-05-21 16:48 UTC)
+
+Finalizing ExpenseTracker. Running acceptance tests to confirm all 4 criteria pass. If successful, will mark project complete and update documentation.
