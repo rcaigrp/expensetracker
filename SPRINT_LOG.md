@@ -111,3 +111,7 @@ NoteKeeper sprint budget exhausted. All 4 acceptance criteria verified and tests
 ## Turn 23 — Manager (2026-05-21 15:12 UTC)
 
 
+
+## Turn 24 — Craft (2026-05-21 15:14 UTC)
+
+Fixing NoteKeeper by implementing notekeeper.py and acceptance_tests.py. Tests use tmp_path for isolation and verify all 4 criteria.
