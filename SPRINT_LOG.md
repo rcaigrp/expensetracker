@@ -11,3 +11,7 @@ Rebuilding NoteKeeper module and acceptance tests to fix 'NO TESTS FOUND' error 
 ## Turn 4 — Integrator (2026-05-21 13:00 UTC)
 
 Running final acceptance tests for NoteKeeper to verify all 4 criteria before sprint closure.
+
+## Turn 5 — Craft (2026-05-21 13:03 UTC)
+
+Fixing path mismatch between notekeeper.py and acceptance_tests.py. Both will use the absolute path /workspace/projects/NoteKeeper/notes.json to ensure tests find the saved files correctly. Also ensuring the docker command runs in the correct directory.
