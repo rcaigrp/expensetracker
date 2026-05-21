@@ -159,3 +159,7 @@ Fixed notekeeper.py to handle empty JSON files. The tests use tempfile.mkstemp()
 ## Turn 36 — Manager (2026-05-21 16:03 UTC)
 
 Closing NoteKeeper sprint. All acceptance criteria met and tests passed. Updating project.json to status='complete' and updating README.md to reflect final status.
+
+## Turn 37 — Manager (2026-05-21 16:10 UTC)
+
+NoteKeeper sprint complete. All 4 acceptance criteria passed. Tests passed successfully with temp file isolation. Closing NoteKeeper and starting LocalWeather.
