@@ -115,3 +115,7 @@ NoteKeeper sprint budget exhausted. All 4 acceptance criteria verified and tests
 ## Turn 24 — Craft (2026-05-21 15:14 UTC)
 
 Fixing NoteKeeper by implementing notekeeper.py and acceptance_tests.py. Tests use tmp_path for isolation and verify all 4 criteria.
+
+## Turn 25 — Manager (2026-05-21 15:17 UTC)
+
+Reading docguard.json to identify parked projects and resuming one. Fixed path to /workspace/docguard.json.
