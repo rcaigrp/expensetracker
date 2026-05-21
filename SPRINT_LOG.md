@@ -139,3 +139,7 @@ Closing NoteKeeper sprint. All 4 acceptance criteria met and tests passed. Budge
 ## Turn 30 — Manager (2026-05-21 15:41 UTC)
 
 Checking for parked projects to resume next sprint. Previous docker command failed due to incorrect path; fixing with absolute path /workspace/storage/projects/.
+
+## Turn 31 — Manager (2026-05-21 15:43 UTC)
+
+Marking NoteKeeper project as complete by writing the project.json file.
