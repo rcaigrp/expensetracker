@@ -3,23 +3,25 @@ import os
 
 DB_FILE = "expenses.json"
 
-def load():
+def _load():
     if not os.path.exists(DB_FILE):
         return []
-    with open(DB_FILE, "r") as f:
+    with open(DB_FILE, 'r') as f:
         return json.load(f)
 
-def save(data):
-    with open(DB_FILE, "w") as f:
+def _save(data):
+    with open(DB_FILE, 'w') as f:
         json.dump(data, f)
 
-def add_expense(expense):
-    data = load()
-    data.append(expense)
-    save(data)
+def add_expense(amount, category):
+    data = _load()
+    data.append({"amount": amount, "category": category})
+    _save(data)
 
 def get_expenses():
-    return load()
+    return _load()
 
 def get_summary():
-    return sum(exp.get("amount", 0) for exp in get_expenses())
+    data = _load()
+    total = sum(e["amount"] for e in data)
+    return {"total": total}
