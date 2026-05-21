@@ -123,3 +123,7 @@ Reading docguard.json to identify parked projects and resuming one. Fixed path t
 ## Turn 26 — Manager (2026-05-21 15:18 UTC)
 
 Closing NoteKeeper project as budget is exhausted and all acceptance criteria passed. Checking for parked projects to resume next.
+
+## Turn 27 — Manager (2026-05-21 15:25 UTC)
+
+NoteKeeper sprint budget exhausted. All 4 acceptance criteria met and tests passed. Marking project as complete and closing the sprint.
