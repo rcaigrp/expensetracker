@@ -151,3 +151,7 @@ Closing NoteKeeper sprint as all acceptance criteria have been met and verified.
 ## Turn 33 — Manager (2026-05-21 15:56 UTC)
 
 
+
+## Turn 34 — Craft (2026-05-21 16:00 UTC)
+
+Fixed notekeeper.py to handle empty JSON files. The tests use tempfile.mkstemp() which creates empty files, and the original _load_notes function failed with JSONDecodeError when trying to load empty JSON. Added try/except block to handle this gracefully.
