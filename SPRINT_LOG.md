@@ -131,3 +131,7 @@ NoteKeeper sprint budget exhausted. All 4 acceptance criteria met and tests pass
 ## Turn 28 — Manager (2026-05-21 15:27 UTC)
 
 Closing NoteKeeper sprint. All 4 acceptance criteria met and tests passed. Budget exhausted (4/4 meetings). Updating project.json to status='complete' and README.md to reflect final status. Ready to resume parked projects in the next turn.
+
+## Turn 29 — Craft (2026-05-21 15:33 UTC)
+
+
