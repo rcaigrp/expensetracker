@@ -1,33 +1,33 @@
 import json
 import os
 
-DATA_FILE = os.path.join(os.path.dirname(__file__), 'expenses.json')
+DATA_FILE = "expense_tracker_data.json"
 
-def load_expenses():
+def _load_data():
     if not os.path.exists(DATA_FILE):
         return []
     with open(DATA_FILE, 'r') as f:
-        return json.load(f)
+        try:
+            return json.load(f)
+        except json.JSONDecodeError:
+            return []
 
-def save_expenses(expenses):
+def _save_data(data):
     with open(DATA_FILE, 'w') as f:
-        json.dump(expenses, f)
+        json.dump(data, f)
 
-def add_expense(amount, category='general', description=''):
-    expenses = load_expenses()
-    expense = {
-        'amount': float(amount),
-        'category': category,
-        'description': description
-    }
-    expenses.append(expense)
-    save_expenses(expenses)
-    return expense
+def add_expense(expense):
+    """Add an expense to the data file."""
+    data = _load_data()
+    data.append(expense)
+    _save_data(data)
+    return True
 
 def get_expenses():
-    return load_expenses()
+    """Retrieve all expenses."""
+    return _load_data()
 
 def get_summary():
-    expenses = load_expenses()
-    total = sum(e.get('amount', 0) for e in expenses)
-    return {'total': total, 'count': len(expenses)}
+    """Return the total amount spent."""
+    data = _load_data()
+    return sum(expense.get('amount', 0) for expense in data)

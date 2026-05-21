@@ -203,3 +203,7 @@ Verifying project completion by running acceptance tests. If all 4 criteria pass
 ## Turn 1 — Manager (2026-05-21 16:48 UTC)
 
 Finalizing ExpenseTracker. Running acceptance tests to confirm all 4 criteria pass. If successful, will mark project complete and update documentation.
+
+## Turn 1 — Manager (2026-05-21 17:46 UTC)
+
+Sprint budget exhausted. Previous tests indicated failures for test_add_expense and test_get_expenses. Per constraints, I am not extending the budget or investigating further. I am parking the project.
