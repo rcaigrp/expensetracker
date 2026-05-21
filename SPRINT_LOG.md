@@ -15,3 +15,7 @@ Running final acceptance tests for NoteKeeper to verify all 4 criteria before sp
 ## Turn 5 — Craft (2026-05-21 13:03 UTC)
 
 Fixing path mismatch between notekeeper.py and acceptance_tests.py. Both will use the absolute path /workspace/projects/NoteKeeper/notes.json to ensure tests find the saved files correctly. Also ensuring the docker command runs in the correct directory.
+
+## Turn 6 — Craft (2026-05-21 13:05 UTC)
+
+Fixing NoteKeeper project. Previous tests failed due to discovery issues. Creating robust notekeeper.py and acceptance_tests.py with temp file handling for deterministic testing.
