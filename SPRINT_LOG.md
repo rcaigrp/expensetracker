@@ -35,3 +35,7 @@ Completed NoteKeeper sprint. All acceptance criteria met and tests passed. Updat
 ## Turn 4 — Craft (2026-05-21 13:54 UTC)
 
 
+
+## Turn 5 — Manager (2026-05-21 13:55 UTC)
+
+Closed NoteKeeper project. All 4 acceptance criteria met and tests passed. Budget exhausted. Updating project.json to status='complete' and updating README.md to reflect completion. Ready to evaluate parked projects or start a new sprint.
