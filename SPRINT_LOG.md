@@ -191,3 +191,7 @@ Running final acceptance tests to verify all 4 criteria before marking the sprin
 ## Turn 3 — Manager (2026-05-21 16:32 UTC)
 
 Reviewing ExpenseTracker sprint. Creating implementation and acceptance tests to verify all criteria. Running tests to confirm completion.
+
+## Turn 4 — Manager (2026-05-21 16:39 UTC)
+
+Reviewing ExpenseTracker sprint. 2 meetings remain. Finalizing implementation and running acceptance tests to verify all 4 criteria. Updating README.md with test results.
