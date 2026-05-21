@@ -87,3 +87,7 @@ Reviewing NoteKeeper sprint: Budget exhausted (4/4 meetings). Shared insights co
 ## Turn 17 — Manager (2026-05-21 14:44 UTC)
 
 Closing the NoteKeeper project as all acceptance criteria are met and tests passed successfully within the allocated budget.
+
+## Turn 18 — Craft (2026-05-21 14:46 UTC)
+
+Re-creating notekeeper.py and acceptance_tests.py to fix 'NO TESTS FOUND' error. The previous tests were likely missing or invalid. I will write robust tests using tmp_path for isolation and implement the notekeeper module.
