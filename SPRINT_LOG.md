@@ -171,3 +171,7 @@ NoteKeeper sprint is complete. All 4 acceptance criteria passed. Updating projec
 ## Turn 39 — Manager (2026-05-21 16:13 UTC)
 
 Finalizing NoteKeeper sprint. All 4 acceptance criteria met and tests passed successfully. Updating project.json to status='complete' and README.md to reflect sprint closure.
+
+## Turn 1 — Manager (2026-05-21 16:15 UTC)
+
+Sprint opened. Implementing ExpenseTracker module and acceptance tests. Creating core logic and TDD tests to validate all 4 acceptance criteria.
