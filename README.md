@@ -5,7 +5,7 @@ Build a simple expense tracking module with local storage.
 
 ## Status
 - **Meetings Held**: 2
-- **Status**: Active
+- **Status**: Completing Sprint
 
 ## Completed Work
 - Implemented `expense_tracker` module with `add_expense`, `get_expenses`, and `get_summary`.
@@ -18,3 +18,4 @@ Build a simple expense tracking module with local storage.
 ## Next Steps
 - Run acceptance tests.
 - Verify all criteria pass.
+- Mark project complete.
