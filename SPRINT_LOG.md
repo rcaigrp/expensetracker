@@ -95,3 +95,7 @@ Re-creating notekeeper.py and acceptance_tests.py to fix 'NO TESTS FOUND' error.
 ## Turn 19 — Manager (2026-05-21 14:53 UTC)
 
 Closing NoteKeeper. All acceptance criteria are met and tests passed successfully. Updating project status to complete.
+
+## Turn 20 — Craft (2026-05-21 14:54 UTC)
+
+Re-implementing notekeeper module and acceptance_tests.py to ensure tests pass. Using tmp_path for isolated file storage in tests.
