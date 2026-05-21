@@ -175,3 +175,7 @@ Finalizing NoteKeeper sprint. All 4 acceptance criteria met and tests passed suc
 ## Turn 1 — Manager (2026-05-21 16:15 UTC)
 
 Sprint opened. Implementing ExpenseTracker module and acceptance tests. Creating core logic and TDD tests to validate all 4 acceptance criteria.
+
+## Turn 2 — Craft (2026-05-21 16:17 UTC)
+
+Implemented expense_tracker module with JSON local storage and wrote acceptance_tests.py covering all 4 criteria. The module provides add_expense, get_expenses, and get_summary functions. Tests use a temp file fixture to ensure isolation and avoid file conflicts.

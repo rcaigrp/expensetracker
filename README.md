@@ -8,12 +8,13 @@ Build a simple expense tracking module with local storage.
 - **Status**: Active
 
 ## Completed Work
-- Implemented `expense_tracker.py` with `add_expense`, `get_expenses`, `get_summary`.
-- Created `acceptance_tests.py` with 4 tests for all acceptance criteria.
+- Implemented `expense_tracker` module with `add_expense`, `get_expenses`, and `get_summary`.
+- Created `acceptance_tests.py` covering all 4 criteria.
+- Used local JSON file storage.
 
 ## Test Results
-- Tests pending execution.
+- Pending execution.
 
 ## Next Steps
 - Run acceptance tests.
-- Verify sprint completion.
+- Verify all criteria pass.

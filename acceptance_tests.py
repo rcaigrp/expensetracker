@@ -1,42 +1,35 @@
-import pytest
 import os
 import tempfile
-import sys
-
-sys.path.insert(0, os.path.dirname(__file__))
+import pytest
 import expense_tracker
 
-DATA_FILE = os.path.join(tempfile.gettempdir(), "test_expenses.json")
-
 @pytest.fixture
-def setup_teardown():
-    if os.path.exists(DATA_FILE):
-        os.remove(DATA_FILE)
-    expense_tracker.DATA_FILE = DATA_FILE
+def setup_db():
+    expense_tracker.DB_FILE = tempfile.mktemp(suffix=".json")
     yield
-    if os.path.exists(DATA_FILE):
-        os.remove(DATA_FILE)
+    os.remove(expense_tracker.DB_FILE)
 
 def test_criterion_1_import():
-    try:
-        import expense_tracker
-    except ImportError:
-        pytest.fail("Module not importable")
+    assert hasattr(expense_tracker, 'add_expense')
+    assert hasattr(expense_tracker, 'get_expenses')
+    assert hasattr(expense_tracker, 'get_summary')
 
-def test_criterion_2_add_expense(setup_teardown):
-    expense_tracker.add_expense(100, "food", "lunch")
-    data = expense_tracker._load_data()
-    assert len(data) == 1
-    assert data[0]['amount'] == 100
-
-def test_criterion_3_get_expenses(setup_teardown):
-    expense_tracker.add_expense(100, "food", "lunch")
+def test_criterion_2_add_expense(setup_db):
+    expense_tracker.add_expense({"amount": 10, "category": "food"})
     expenses = expense_tracker.get_expenses()
     assert len(expenses) == 1
+    assert expenses[0]["amount"] == 10
 
-def test_criterion_4_get_summary(setup_teardown):
-    expense_tracker.add_expense(100, "food", "lunch")
-    expense_tracker.add_expense(200, "work", "overtime")
-    summary = expense_tracker.get_summary()
-    assert summary['total'] == 300
-    assert summary['count'] == 2
+def test_criterion_3_get_expenses(setup_db):
+    expense_tracker.add_expense({"amount": 5, "category": "transport"})
+    expense_tracker.add_expense({"amount": 15, "category": "food"})
+    expenses = expense_tracker.get_expenses()
+    assert len(expenses) == 2
+    assert expenses[0]["category"] == "transport"
+    assert expenses[1]["category"] == "food"
+
+def test_criterion_4_get_summary(setup_db):
+    expense_tracker.add_expense({"amount": 10, "category": "food"})
+    expense_tracker.add_expense({"amount": 20, "category": "transport"})
+    expense_tracker.add_expense({"amount": 5, "category": "misc"})
+    assert expense_tracker.get_summary() == 35

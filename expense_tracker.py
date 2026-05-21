@@ -1,35 +1,25 @@
 import json
 import os
 
-DATA_FILE = "expenses.json"
+DB_FILE = "expenses.json"
 
-def _load_data():
-    if not os.path.exists(DATA_FILE):
+def load():
+    if not os.path.exists(DB_FILE):
         return []
-    with open(DATA_FILE, 'r') as f:
-        try:
-            return json.load(f)
-        except json.JSONDecodeError:
-            return []
+    with open(DB_FILE, "r") as f:
+        return json.load(f)
 
-def _save_data(data):
-    with open(DATA_FILE, 'w') as f:
+def save(data):
+    with open(DB_FILE, "w") as f:
         json.dump(data, f)
 
-def add_expense(amount, category, description=""):
-    expense = {
-        "amount": amount,
-        "category": category,
-        "description": description
-    }
-    data = _load_data()
+def add_expense(expense):
+    data = load()
     data.append(expense)
-    _save_data(data)
+    save(data)
 
 def get_expenses():
-    return _load_data()
+    return load()
 
 def get_summary():
-    expenses = get_expenses()
-    total = sum(exp['amount'] for exp in expenses)
-    return {"total": total, "count": len(expenses)}
+    return sum(exp.get("amount", 0) for exp in get_expenses())
