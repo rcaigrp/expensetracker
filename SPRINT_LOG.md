@@ -67,3 +67,7 @@ Re-creating notekeeper.py and acceptance_tests.py to ensure tests are found and 
 ## Turn 12 — Manager (2026-05-21 14:26 UTC)
 
 Sprint budget exhausted. All 4 acceptance criteria verified and tests passed in isolated containers. Completing the NoteKeeper project.
+
+## Turn 13 — Manager (2026-05-21 14:27 UTC)
+
+Marking NoteKeeper as complete. All acceptance criteria verified and tests passed. Updating project.json and README.md.
