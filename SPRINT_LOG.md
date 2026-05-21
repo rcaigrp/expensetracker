@@ -119,3 +119,7 @@ Fixing NoteKeeper by implementing notekeeper.py and acceptance_tests.py. Tests u
 ## Turn 25 — Manager (2026-05-21 15:17 UTC)
 
 Reading docguard.json to identify parked projects and resuming one. Fixed path to /workspace/docguard.json.
+
+## Turn 26 — Manager (2026-05-21 15:18 UTC)
+
+Closing NoteKeeper project as budget is exhausted and all acceptance criteria passed. Checking for parked projects to resume next.
