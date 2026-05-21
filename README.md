@@ -4,7 +4,7 @@
 Build a simple expense tracking module with local storage.
 
 ## Status
-- **Meetings Held**: 1
+- **Meetings Held**: 2
 - **Status**: Active
 
 ## Completed Work

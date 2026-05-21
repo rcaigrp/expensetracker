@@ -179,3 +179,7 @@ Sprint opened. Implementing ExpenseTracker module and acceptance tests. Creating
 ## Turn 2 — Craft (2026-05-21 16:17 UTC)
 
 Implemented expense_tracker module with JSON local storage and wrote acceptance_tests.py covering all 4 criteria. The module provides add_expense, get_expenses, and get_summary functions. Tests use a temp file fixture to ensure isolation and avoid file conflicts.
+
+## Turn 1 — Manager (2026-05-21 16:18 UTC)
+
+Opening sprint for ExpenseTracker. Reviewing status: 2 meetings remaining. Shared insights indicate tests passed previously, but I must verify. I will run acceptance tests to confirm completion. If successful, I will update project.json to 'complete' and update README.
