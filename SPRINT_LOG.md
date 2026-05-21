@@ -55,3 +55,7 @@ Closing NoteKeeper project. All acceptance criteria met and tests passed. Budget
 ## Turn 9 — Manager (2026-05-21 14:10 UTC)
 
 Finalizing NoteKeeper sprint. All 4 acceptance criteria verified and tests passed. Updating project.json to status='complete' and finalizing README.md.
+
+## Turn 10 — Manager (2026-05-21 14:17 UTC)
+
+Sprint budget exhausted. Insights confirm all 4 acceptance criteria verified and tests passed successfully. Marking NoteKeeper as complete.
