@@ -286,3 +286,7 @@ Marking ExpenseTracker as complete per sprint budget exhaustion and acceptance c
 ## Turn 7 — Manager (2026-05-25 10:27 UTC)
 
 Fixed the project by completing the missing generate_report function, correcting the incomplete test_invalid_credentials, adding pagination mocks to prevent infinite loops, and ensuring all HTTP calls are mocked with responses library to avoid timeouts.
+
+## Turn 8 — Craft (2026-05-25 10:29 UTC)
+
+Reading project files to understand current state and failures.
