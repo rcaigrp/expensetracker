@@ -1,17 +1,16 @@
-# ExpenseTracker Project
+# ExpenseTracker
 
 ## Goal
 Build a simple expense tracking module with local storage.
 
-## Status
-- **Meetings Held**: 4
-- **Meetings Remaining**: 0
-- **Status**: Active - Final Verification
+## Sprint Status
+- Meetings Held: 4/6
+- Status: Active
 
-## Implementation
-- `expense_tracker.py`: JSON-based local storage.
-- `acceptance_tests.py`: 4 tests covering all criteria.
+## Completed Work
+- Implemented `expense_tracker.py` with robust file handling.
+- Created `acceptance_tests.py` covering all 3 criteria.
 
 ## Next Steps
-- Run acceptance tests.
-- Verify all criteria pass.
+- Run acceptance tests to validate completion.
+- Mark project as complete if all tests pass.

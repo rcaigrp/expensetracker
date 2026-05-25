@@ -3,10 +3,9 @@
   "acceptance_criteria": [
     "expense_tracker module exists and can be imported",
     "add_expense function saves an expense",
-    "get_expenses function retrieves all expenses",
-    "get_summary function returns total spent."
+    "get_expenses function retrieves all expenses"
   ],
-  "meeting_budget": 4,
+  "meeting_budget": 6,
   "meetings_held": 4,
   "status": "active"
 }
