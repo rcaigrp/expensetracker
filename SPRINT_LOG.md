@@ -278,3 +278,7 @@ Marking ExpenseTracker as complete per sprint budget exhaustion and acceptance c
   "vote": {"action": "Run acceptance tests to verify all criteria pass.", "rationale": "Tests are ready and cover all acceptance criteria with mocked APIs."}
 }
 ```
+
+## Turn 6 — Craft (2026-05-25 10:21 UTC)
+
+
